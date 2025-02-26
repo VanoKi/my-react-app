@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { log } from 'console';
 
 // func decloration
 function App() { // this is a component
@@ -9,9 +10,10 @@ function App() { // this is a component
   // return jsx
   return (
     <div>
-      This is app component
+      <Title/>
       <Rating />
       <Accordion></Accordion>
+      <Rating />
     </div>
   );
 }
@@ -34,15 +36,20 @@ function App() { // this is a component
 //   );
 // }
 
+function Title() {
+  return <>This is a Title</> // fragment
+}
+
 function Rating() {
   // debugger
+  console.log('Rating rendering');
   return (
     <div>
-      <Star></Star>
-      <Star></Star>
-      <Star></Star>
-      <Star></Star>
-      <Star></Star>
+      <Star/>
+      <Star/>
+      <Star/>
+      <Star/>
+      <Star/>
     </div>
   )
 }
@@ -60,6 +67,7 @@ function Accordion() {
 }
 
 function Star() {
+  console.log('star rendered')
   return <div>star</div>
 }
 

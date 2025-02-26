@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { log } from 'console';
 import Accordion from './components/accordion/accordion';
+import {Rating} from "./components/rating/Rating";
 
 // func decloration
 function App() { // this is a component
@@ -41,25 +40,6 @@ function App() { // this is a component
 function Title() {
   console.log('Title rendered')
   return <>This is a Title</> // fragment
-}
-
-function Rating() {
-  // debugger
-  console.log('Rating rendering');
-  return (
-    <>
-      <Star/>
-      <Star/>
-      <Star/>
-      <Star/>
-      <Star/>
-    </>
-  )
-}
-
-function Star() {
-  console.log('star rendered')
-  return <div>star</div>
 }
 
 export default App;

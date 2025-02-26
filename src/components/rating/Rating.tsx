@@ -4,17 +4,23 @@ export function Rating() {
     // debugger
     console.log('Rating rendering');
     return (
-        <>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </>
+        <div>
+            <Star selected={true}/>
+            <Star selected={true}/>
+            <Star selected={false}/>
+            <Star selected={false}/>
+            <Star selected={false}/>
+        </div>
     )
 }
 
-function Star() {
+
+
+function Star(props: any) {
     console.log('star rendered')
-    return <div>star</div>
+    if (props.selected == true) {
+        return <span><b>star</b> </span>
+    } else {
+        return <span>star </span>
+    }
 }

@@ -2,19 +2,22 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function hello() {
+function hello(){
   debugger
-  alert('Hello')
+  alert('hello')
 }
-// hello()
+hello()
 
 // func decloration
 function App() { // this is a component
+  debugger
   // something useful
   // return jsx
   return (
     <div>
       This is app component
+      <Rating />
+      <Accordion></Accordion>
     </div>
   );
 }
@@ -38,6 +41,7 @@ function App() { // this is a component
 // }
 
 function Rating() {
+  debugger
   return (
     <div>
       <div>star</div>
@@ -50,6 +54,7 @@ function Rating() {
 }
 
 function Accordion() {
+  debugger
   return <div>
     <h3>Menu</h3>
     <ul>

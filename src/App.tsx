@@ -8,6 +8,7 @@ function App() { // this is a component
   // debugger
   // something useful
   // return jsx
+  console.log('App rendering')
   return (
     <div>
       <Title/>
@@ -37,6 +38,7 @@ function App() { // this is a component
 // }
 
 function Title() {
+  console.log('Title rendered')
   return <>This is a Title</> // fragment
 }
 
@@ -44,26 +46,38 @@ function Rating() {
   // debugger
   console.log('Rating rendering');
   return (
-    <div>
+    <>
       <Star/>
       <Star/>
       <Star/>
       <Star/>
       <Star/>
-    </div>
+    </>
   )
 }
 
 function Accordion() {
+  console.log('accordion rendered')
   // debugger
   return <div>
-    <h3>Menu</h3>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
+    <AccordionTitle/>
+    <AccordionBody/>
   </div>
+}
+
+function AccordionTitle() {
+  console.log('AccordionTitle rendered')
+  return <h3>Menu</h3>
+}
+function AccordionBody() {
+  console.log('AccordionBody rendered')
+  return <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
 }
 
 function Star() {

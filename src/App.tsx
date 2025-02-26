@@ -2,15 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function hello(){
-  debugger
-  alert('hello')
-}
-hello()
-
 // func decloration
 function App() { // this is a component
-  debugger
+  // debugger
   // something useful
   // return jsx
   return (
@@ -41,20 +35,20 @@ function App() { // this is a component
 // }
 
 function Rating() {
-  debugger
+  // debugger
   return (
     <div>
-      <div>star</div>
-      <div>star</div>
-      <div>star</div>
-      <div>star</div>
-      <div>star</div>
+      <Star></Star>
+      <Star></Star>
+      <Star></Star>
+      <Star></Star>
+      <Star></Star>
     </div>
   )
 }
 
 function Accordion() {
-  debugger
+  // debugger
   return <div>
     <h3>Menu</h3>
     <ul>
@@ -63,6 +57,10 @@ function Accordion() {
       <li>3</li>
     </ul>
   </div>
+}
+
+function Star() {
+  return <div>star</div>
 }
 
 export default App;

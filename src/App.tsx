@@ -12,14 +12,14 @@ function App() { // this is a component
   return (
     <div>
 
-      <input type="text" 
+      <input type="text"
               value={'text'}/>
       <input value="yo" />
 
       <Title/>
-      <Rating />
+      <Rating value={3}/>
       <Accordion></Accordion>
-      <Rating />
+      <Rating value={4}/>
     </div>
   );
 }

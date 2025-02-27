@@ -11,17 +11,15 @@ function App() { // this is a component
   console.log('App rendering')
   return (
     <div>
-
       {/* <input type="text"
               value={'text'}/>
       <input value="yo" /> */}
-
       <Title title={'this is a component'}/>
-      <Title title={'User Page'}/>
+      {/* <Title title={'User Page'}/> */}
       {/* <Rating value={3}/> */}
       <Accordion title={'menu 1'} collapsed={true}/>
       <Accordion title={'menu 2'} collapsed={false}/>
-      <Rating value={5}/>
+      {/* <Rating value={5}/> */}
       {/* <Rating value={2}/>
       <Rating value={3}/>
       <Rating value={4}/>

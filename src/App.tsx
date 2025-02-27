@@ -19,7 +19,8 @@ function App() { // this is a component
       <Title title={'this is a component'}/>
       <Title title={'User Page'}/>
       <Rating value={3}/>
-      <Accordion></Accordion>
+      <Accordion title={'menu 1'}/>
+      <Accordion title={'menu 2'}/>
       <Rating value={1}/>
       <Rating value={2}/>
       <Rating value={3}/>

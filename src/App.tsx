@@ -16,10 +16,15 @@ function App() { // this is a component
               value={'text'}/>
       <input value="yo" />
 
-      <Title/>
+      <Title title={'this is a component'}/>
+      <Title title={'User Page'}/>
       <Rating value={3}/>
       <Accordion></Accordion>
+      <Rating value={1}/>
+      <Rating value={2}/>
+      <Rating value={3}/>
       <Rating value={4}/>
+      <Rating value={5}/>
     </div>
   );
 }
@@ -42,9 +47,9 @@ function App() { // this is a component
 //   );
 // }
 
-function Title() {
+function Title(props: any) {
   console.log('Title rendered')
-  return <>This is a Title</> // fragment
+  return <h1>{props.title}</h1> // fragment
 }
 
 export default App;

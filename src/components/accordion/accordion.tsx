@@ -1,6 +1,9 @@
 import React from "react"
 
-export function Accordion(props: any) {
+type AccordionPropsType = {
+  title: string
+}
+export function Accordion(props: AccordionPropsType) {
   console.log('accordion rendered')
   // debugger
   return <div>

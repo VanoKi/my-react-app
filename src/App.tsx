@@ -11,6 +11,10 @@ function App() { // this is a component
   console.log('App rendering')
   return (
     <div>
+
+      <input type="text" />
+      <input value="yo" />
+
       <Title/>
       <Rating />
       <Accordion></Accordion>

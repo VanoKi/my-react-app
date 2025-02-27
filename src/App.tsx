@@ -21,7 +21,7 @@ function App() { // this is a component
       {/* <Rating value={3}/> */}
       <Accordion title={'menu 1'}/>
       {/* <Accordion title={'menu 2'}/> */}
-      <Rating value={1}/>
+      <Rating value={5}/>
       {/* <Rating value={2}/>
       <Rating value={3}/>
       <Rating value={4}/>
@@ -47,8 +47,10 @@ function App() { // this is a component
 //     </div>
 //   );
 // }
-
-function Title(props: any) {
+type TitlePropsType = {
+  title: string
+}
+function Title(props: TitlePropsType) {
   console.log('Title rendered')
   return <h1>{props.title}</h1> // fragment
 }

@@ -18,7 +18,7 @@ export function Rating() {
 
 function Star(props: any) {
     console.log('star rendered')
-    if (props.selected == true) {
+    if (props.selected === true) {
         return <span><b>star</b> </span>
     } else {
         return <span>star </span>

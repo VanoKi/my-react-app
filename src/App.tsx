@@ -12,7 +12,8 @@ function App() { // this is a component
   return (
     <div>
 
-      <input type="text" />
+      <input type="text" 
+              value={'text'}/>
       <input value="yo" />
 
       <Title/>
